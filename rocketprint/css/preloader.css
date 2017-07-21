@@ -9,11 +9,12 @@
 }
 
 .pulse{
+    margin-left: -40px;
+    margin-top: -40px;
     position: relative;
     left: 50%;
     top: 50vh;
-    margin-left: -40px;
-    margin-top: -40px;
+   
 }
 
 .pulse::before, .pulse::after{
