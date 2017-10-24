@@ -116,9 +116,9 @@
         min-height: 98px !important;
     }
     .wincalc .wincalc-add-to-basket-module a {
-        right: auto !important;
-        left: 70px; 
-        top: 85px !important;
+        /*right: auto !important;*/
+        /*left: 70px; */
+        /*top: 85px !important;*/
     }
 }
 /*-------------------------------------*/

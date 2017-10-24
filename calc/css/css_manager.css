@@ -392,7 +392,7 @@ style >
 }
 
 .wincalc .price-box {
-    min-height: 33px;
+    min-height: 82px;
 }
 
 .wincalc .price-box .wincalc-module-footer {
@@ -528,12 +528,12 @@ style >
 }
 
 .wincalc .calc-click-icon {
-    top: 30px;
-    right: 25px;
     position: absolute;
     display: block;
     cursor: help;
     z-index: 1;
+    bottom: 15px;
+    font-size: 12px;
 }
 
 .wincalc .toggle-field > .wincalc-module-body {
@@ -991,12 +991,19 @@ style >
     border-radius: 10px;
 }
 
+.form-group {
+    margin-bottom: 0;
+}
+
+.has-error .form-control {
+    border-color: #f55;
+}
+
 .wincalc-form .wincalc-form-send {
     display: block;
-    float: right;
     width: 209px;
     margin-top: 20px;
-    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgb(216, 106, 154) 0%, rgb(210, 84, 139) 100%) repeat scroll 0% 0%;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #FF4440 0%, #F50000 99%) repeat scroll 0% 0%;
     border-radius: 2px;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -1004,6 +1011,10 @@ style >
     padding: 15px 0px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.wincalc-form .wincalc-form-send:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ea0000 0%, #ea0000 99%) repeat scroll 0% 0%;
 }
 
 .wincalc-form .wincalc-form-send:active {
@@ -1021,7 +1032,7 @@ style >
 }
 
 .wincalc-form .wincalc-form-close {
-    background: rgba(0, 0, 0, 0) url("close.png") no-repeat scroll 50% 50%;
+    background: rgba(0, 0, 0, 0) url("../img/close.png") no-repeat scroll 50% 50%;
     width: 26px;
     height: 26px;
     cursor: pointer;
@@ -1032,8 +1043,41 @@ style >
 }
 
 .wincalc-form .wincalc-form-close:hover {
-    background: rgba(0, 0, 0, 0) url("close-hover.png") no-repeat scroll 50% 50%;
+    background: rgba(0, 0, 0, 0) url("../img/close-hover.png") no-repeat scroll 50% 50%;
 }
+
+.modal-dialog{
+    width: 795px;
+}
+
+#modal-success .modal-dialog{
+    width: 405px;
+}
+
+#modal-success .wincalc-form .wincalc-form-contents {
+    width: auto;
+}
+
+#modal-success .wincalc-form .wincalc-form-send {
+    display: block;
+    width: 144px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #FF4440 0%, #F50000 99%) repeat scroll 0% 0%;
+    border-radius: 2px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#modal-success .wincalc-form .wincalc-form-send:hover {
+    background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #ea0000 0%, #ea0000 99%) repeat scroll 0% 0%;
+}
+
 
 .wincalc-form input, .wincalc-form textarea, .wincalc-form select {
     width: 100%;
